@@ -1,10 +1,3 @@
-.body {
-    display: flex;
-    flex-direction: column  ;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
 .header {
     display: flex;
@@ -45,45 +38,4 @@
     align-self: center;
     width: 55%;
     height: 100%;
-
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-.main-form {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    height: 100%;
-    border-style: solid;
-    border-color: red;
-}
-
-.fill-in {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 1%;
-    width: 100%;
-}
-
-.get-name{
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
-    width: 100%;
-
-}
-
-.input-form{
-    display: flex;
-    justify-content: flex-start;
-    text-align: right;
-    width: 100%;
-
 }
