@@ -3,10 +3,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 10%;
-    padding: 20px;
-    border-style: solid;
-    border-color: red;
+    height: 5%;
+    padding: 1px;
+
 }
 
 .return-home-btn {
@@ -27,8 +26,8 @@
 }
 
 .img-logo {
-    height: 50px;
-    width: 55px;
+    height: 30px;
+    width: 35px;
     margin-right: 10px;
 }
 
