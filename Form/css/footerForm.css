@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 100%;
     height: 20%;
-    background-image: linear-gradient(rgb(255, 237, 176, 0.774), rgb(255, 255, 255));
+    background-image: linear-gradient(rgb(192, 172, 108, 0.774), rgb(255, 255, 255));
 
 }
 
@@ -27,5 +27,6 @@
 }
 
 .footer-nav-links {
-
+    font-weight: bold;
+    text-shadow: rgb(141, 138, 138);
 }
