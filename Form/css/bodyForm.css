@@ -3,7 +3,8 @@
     flex-direction: column  ;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 70%;
+    
 }
 
 .main {
@@ -11,6 +12,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(rgb(78, 31, 31), rgb(255, 237, 176, 0.774));
 }
 
 .main-form {
@@ -18,8 +20,7 @@
     flex-direction: column;
     width: 25%;
     height: 100%;
-    border-style: solid;
-    border-color: red;
+
 }
 
 .fill-in {
