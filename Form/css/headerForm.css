@@ -12,9 +12,20 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 10%;
+    width: auto;
     height: 100%;
+    font-weight: bold;
+    background-color: rgb(78, 31, 31);
 
+}
+
+.home-btn {
+    color: rgb(250, 254, 255);
+}
+
+a:hover.home-btn {
+    color: rgb(78, 31, 31);
+    background-color: rgb(250, 254, 255);
 }
 
 .logo {
@@ -35,6 +46,8 @@
     display: flex;
     justify-content: flex-start;
     align-self: center;
+    font-style: oblique;
+    font-weight: bold;
     width: 55%;
     height: 100%;
 }
