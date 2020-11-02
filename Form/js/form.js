@@ -2,11 +2,12 @@ window.onload = function (){
     // username Title
     var userName = document.getElementById("input1");
 
-    userName.addEventListener('keyup', inputName);
+    userName.addEventListener('keyup', nickName);
 
-    function inputName(fn) {
+    function nickName(fn) {
     document.getElementById('hi-username').innerHTML = '<h3>Hi!, ' +fn.target.value+'</h3>';
     };
+
     // input FULL NAME
     var itemInput = document.getElementById('input1');
 
