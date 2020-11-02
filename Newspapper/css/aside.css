@@ -1,0 +1,203 @@
+.more-news {
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(232, 238, 176, 0.658);
+}
+
+.third-section {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.third {
+    display: block;
+    width: 25%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.third-title {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+    border-top-style: double;
+    border-top-color: rgba(128, 128, 128, 0.685);
+    font-weight: bold;
+
+}
+
+.third-img-art {
+    width: 90%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.third-text {
+    width: 90%;
+    text-align: justify;
+}
+
+.third-text::first-letter{
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'New Rocker';
+}
+
+@media screen and (max-width: 900px) {
+
+    .third-section {
+        display: inline;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .third {
+        width: 100%;
+        height: 100%;
+        border-top: cadetblue;
+        border-top-style: double;
+    }
+
+    .third-title {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .third-img-art {
+        height: 100%;
+    }
+
+    .third-text {
+        width: 90%;
+        margin-left: 5%;
+        line-height: 150%;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .third-section {
+        display: inline;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .third {
+        width: 100%;
+        height: 100%;
+        border-top: cadetblue;
+        border-top-style: double;
+    }
+
+    .third-title {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .third-img-art {
+        height: 100%;
+    }
+
+    .third-text {
+        width: 90%;
+        margin-left: 5%;
+        line-height: 150%;
+        text-align: justify;
+        font-size: 12px;
+    }
+
+}
+
+.fourth {
+    display: inline-block;
+    width: 90%;
+    padding:5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    list-style-type: square;
+
+}
+
+.fourth-title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+    border-top-style: double;
+    border-top-color: rgba(128, 128, 128, 0.685);
+    font-weight: bold;
+    font-size: 34px;
+
+}
+
+@media screen and (max-width: 290px) {
+    .fourth-title {
+        font-size: 100%;
+    }
+}
+
+.fourth-img-art {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.fourth-text {
+    width: 95%;
+    text-align: justify;
+    margin-left: 2.5%;
+    line-height: 150%;
+}
+
+.fourth-text::first-letter{
+    font-weight: bold;
+    font-size: 38px;
+    font-family: 'New Rocker';
+}
+
+.fourth-ul {
+    line-height: 200%;
+}
+
+.fourth-span {
+    width: 95%;
+    margin-left: 0px;
+    font-weight: bold;
+    margin-left: 0px;
+}

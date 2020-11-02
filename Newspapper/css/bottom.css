@@ -1,0 +1,49 @@
+.bottom-pag {
+    display: block;
+    background-color: rgb(49, 1, 1);
+    width: 100%;
+    height: 250px;
+
+}
+
+.bottom-log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75%;
+    font-size: 75px;
+    font-family: 'New Rocker';
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px rgb(8, 0, 0);
+    text-transform: uppercase;
+
+}
+
+.rights-reserv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: rgba(255, 251, 251, 0.685);
+    text-shadow: rgb(0, 0 ,0);
+
+}
+
+@media screen and (max-width: 290px) {
+    .bottom-log {
+        font-size: 45px;
+    }
+}

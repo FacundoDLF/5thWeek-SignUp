@@ -30,49 +30,78 @@
     </header>
     <section id="main" class="main">
         <div id="main-form" class="main-form">
-            <span id="main-title" class="main-title" >Subscribe - Sign Up</span>
-            <form id="fill-in" class="fill-in" action="">
-                <label id="get-name" class="label-form" for="GET-name">Name / Surname: </label>
-                <input id="input-form" class="input-form" type="text" name="name">
-            <!--<input id="subscribe-btn" class="input-btn" type="submit" value="Subscribe">-->
-            </form>
-            <form id="fill-in" class="fill-in" action="">
-                <label id="get-name" class="label-form" for="GET-name">Email: </label>
-                <input id="input-form" class="input-form" type="text" name="name">
-            </form>
-            <form id="fill-in" class="fill-in" action="">
-                <label id="get-name" class="label-form" for="GET-name">Password: </label>
-                <input id="input-form" class="input-form" type="text" name="name">
-            </form>
-            <form id="fill-in" class="fill-in" action="">
-                <label id="get-name" class="label-form" for="GET-name">Age: </label>
-                <input id="input-form" class="input-form" type="text" name="name">
-            </form>
-            <form id="fill-in" class="fill-in" action="">
-                <label id="get-name" class="label-form" for="GET-name">Phone Number: </label>
-                <input id="input-form" class="input-form" type="text" name="name">
-            </form>
-            <form id="fill-in" class="fill-in" action="">
-                <label id="get-name" class="label-form" for="GET-name">Address: </label>
-                <input id="input-form" class="input-form" type="text" name="name">
-            </form>
-            <form id="fill-in" class="fill-in" action="">
-                <label id="get-name" class="label-form" for="GET-name">City: </label>
-                <input id="input-form" class="input-form" type="text" name="name">
-            </form>
-            <form id="fill-in" class="fill-in" action="">
-                <label id="get-name" class="label-form" for="GET-name">C.P: </label>
-                <input id="input-form" class="input-form" type="text" name="name">
-            </form>
-            <form id="fill-in" class="fill-in" action="">
-                <label id="get-name" class="label-form" for="GET-name">DNI: </label>
-                <input id="input-form" class="input-form" type="text" name="name">
+            <span id="main-title" class="main-title" >subscribe - sign up</span>
+            <h3 id="hi-username" class="hi-username">hi!, </h3>
+            <form id="main-fills" class="main-fills">
+                <div class="row">
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-name">Name / Surname: </label>
+                        <input id="input1" class="input-form" type="text" name="name">
+                        <span id="error1" class="error-span"></span>
+                    <!--<input id="subscribe-btn" class="input-btn" type="submit" value="Subscribe">-->
+                    </fieldset>
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-name">Email: </label>
+                        <input id="input2" class="input-form" type="email" name="email">
+                        <span id="error2" class="error-span"></span>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-pass">Password: </label>
+                        <input id="input3" class="input-form" type="password" name="pass">
+                        <span id="error3" class="error-span"></span>
+                    </fieldset>
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-pass">Very Password: </label>
+                        <input id="input4" class="input-form" type="text" name="pass">
+                        <span id="error4" class="error-span"></span>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-age">Age: </label>
+                        <input id="input5" class="input-form" type="text" name="age">
+                        <span id="error5" class="error-span"></span>
+                    </fieldset>
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-phone">Phone Number: </label>
+                        <input id="input6" class="input-form" type="text" name="phonum">
+                        <span id="error6" class="error-span"></span>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-address">Address: </label>
+                        <input id="input7" class="input-form" type="text" name="addrs">
+                        <span id="error7" class="error-span"></span>
+                    </fieldset>
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-city">City: </label>
+                        <input id="input8" class="input-form" type="text" name="city">
+                        <span id="error8" class="error-span"></span>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-cp">C.P: </label>
+                        <input id="input9" class="input-form" type="text" name="cp">
+                        <span id="error9" class="error-span"></span>
+                    </fieldset>
+                    <fieldset class="fill-in">
+                        <label id="get-name" class="label-form" for="GET-dni">DNI: </label>
+                        <input id="input10" class="input-form" type="text" name="dni">
+                        <span id="error10" class="error-span"></span>
+                    </fieldset>
+                </div>
+                <button id="submit" class="submit" type="submit">submit!
+                </button>
             </form>
         </div>
     </section>
     <footer id="footer" class="footer">
         <p id="footer-iso" class="footer-iso">i ~ m ~ n</p>
-        <p id="rights-reserved" class="rights-reserv">© 2020 IMN - International Monkey News ~ All rights reserved.</p>
+        <p id="rights-reserved" class="rights-reserved">© 2020 IMN - International Monkey News ~ All rights reserved.</p>
         <diva id=footer-nav class="footer-nav">
             <ul id="footer-nav-links" class="footer-nav-links">
                 <a id="link" class="link" href="">News</a>

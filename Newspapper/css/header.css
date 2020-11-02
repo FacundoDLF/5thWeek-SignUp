@@ -1,0 +1,142 @@
+.header1 {
+    display: flex;
+    background-color: rgb(253,253,252);
+    width: 100%;
+    height: 100%;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space;
+    align-items: flex-start;
+    text-align: left;
+    width: 25%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+
+}
+
+.app {
+    display: flex;
+    width: 50%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 2%;
+    margin-right: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.ico-app {
+    display: flex;
+    width: 50%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50%;
+
+}
+
+.search-bar {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    width: 90%;
+
+}
+
+.search-button {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 12%;
+    padding: 2px;
+    background-color: rgb(78, 31, 31);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    width: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.log-in-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: linear-gradient(grey, white);
+    color: black;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+a:hover.log-in-button {
+    color: rgb(148, 12, 12);
+    background-image: linear-gradient(white, grey);
+    border-style: solid;
+    border-color: grey;
+}
+
+.lenguage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px, 0px, 0px, 0px;
+    list-style-type: none;
+    text-transform: capitalize;
+    
+}
+
+.leng {
+    padding: 3%;
+    background-color: rgba(248, 162, 152, 0.295);
+    color: rgba(245, 79, 61, 0.459);
+    opacity: 60%;
+}
+
+
+@media screen and (max-width: 480px) {
+    .social-media,.lenguage {
+        display: none;
+    }
+    .login {
+        width: 50%;
+    }
+}

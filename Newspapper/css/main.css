@@ -1,0 +1,116 @@
+.main-body {
+    background-image: linear-gradient(white, rgba(232, 238, 176, 0.658));
+}
+
+.article {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.principal {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.img-art {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.epigraph {
+    color: rgba(116, 110, 110, 0.842);
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+    border-bottom-style: double;
+    border-bottom-color: rgba(124, 119, 119, 0.397);
+}
+
+.epigraph:first-letter {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+.principal-text {
+    color: rgba(0, 0, 0, 0.842);
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.secondary-text {
+    color: rgb(124, 119, 119);
+    display: block;
+    text-align: justify;
+    width: 95%;
+    height: auto;
+    margin-bottom: 0px;  /*<---On vw 768px, a white line appeared.*/
+
+}
+
+.principal-text:first-letter {
+    font-weight: cursive;
+    font-size: 40px;
+    line-height: 10px;
+    text-transform: uppercase;
+
+}
+
+.secondary-text:first-letter {
+    font-weight: cursive;
+    font-size: 40px;
+    line-height: 10px;
+    text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 768px) {
+    .article {
+        display: inline;
+    }
+    .principal, .principal-text, .secondary-text {
+        width: 95%;
+        font-size: 18px;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .principal {
+        font-size: 14px;
+        text-align: center;
+    }
+    .principal-text, h2, h3 {
+        display: none;
+    }
+}
+
+.secondary {
+    display: inline;
+    width: 40%;
+    margin-top: 4%;
+
+}
+
+.second-title {
+    font-size: 30px;
+}
