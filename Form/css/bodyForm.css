@@ -35,8 +35,13 @@
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     text-shadow: 3px 1px rgb(8, 0, 0);
-   
 
+}
+
+@media screen and (max-width: 400px){
+    .iso-logo {
+        display: none;
+    }
 }
 
 .hi-username {
@@ -65,9 +70,10 @@
 
 .row {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2% 0 1.5% 0;
+    padding: 1% 0 1% 0;
 }
 
 .fill-in {
