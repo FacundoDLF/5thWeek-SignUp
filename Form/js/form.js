@@ -113,6 +113,10 @@ window.onload = function (){
             }
     }
 
+    // input AGE
+
+    var itemInput5 = document.getElementById('input5');
+
 
 
 
