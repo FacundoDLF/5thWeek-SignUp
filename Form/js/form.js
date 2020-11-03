@@ -51,7 +51,7 @@ window.onload = function (){
         const result = ('result');
         const email = ('input2').value();
         result.text("");
-      
+
         if (validateE(va)) {
           result.text(va + ' is valid :)');
           result.css('color', 'green');
@@ -150,12 +150,37 @@ window.onload = function (){
     function phoneOut(phOut){
         console.log('EVENT TYPE: '+phOut.target.value);
         if ( input6.value.length >= 7 ) {
-            document.getElementById('error6').style.display = 'none'
+            document.getElementById('error6').style.display = 'none';
         }else{
             document.getElementById('error6').style.display = 'flex';
             document.getElementById('error6').innerHTML = '*At least 7 digits.';
             }
     };
+
+    // input ADDRESS
+
+    var itemInput7 = document.getElementById('input7');
+
+    itemInput7.addEventListener('focus', addressIn);
+    itemInput7.addEventListener('blur', addressOut);
+
+    function addressIn(adIn){
+        console.log('EVENT TYPE: '+adIn.target.value);
+        document.getElementById('error7').style.display = 'none';
+    };
+
+    function addressOut(adOut){
+        if (input7.value.length += ' ' >= 5) {
+            document.getElementById('error7').style.display = 'none';
+        } else {
+            document.getElementById('error7').style.display = 'flex';
+            document.getElementById('error7').innerHTML = '*Invalid Address.';
+        }
+    };
+
+    // input CITY
+
+    
 
 
 
