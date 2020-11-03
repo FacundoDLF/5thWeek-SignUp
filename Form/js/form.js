@@ -117,6 +117,48 @@ window.onload = function (){
 
     var itemInput5 = document.getElementById('input5');
 
+    itemInput5.addEventListener('focus', ageIn);
+    itemInput5.addEventListener('blur', ageOut);
+
+
+    function ageIn(a) {
+        console.log('Focus Type: '+a.target.value);
+        document.getElementById('error5').style.display = 'none';
+    };
+
+    function ageOut(aOut){
+        console.log('EVENT TYPE: '+aOut.target.value);
+        if ( input5.value.length <= 2 ) {
+            document.getElementById('error5').style.display = 'none'
+        }else{
+            document.getElementById('error5').style.display = 'flex';
+            document.getElementById('error5').innerHTML = '*Invalid Age.';
+            }
+    };
+
+    // input PHONE NUMBER
+
+    var itemInput6 = document.getElementById('input6');
+
+    itemInput6.addEventListener('focus', phoneIn);
+    itemInput6.addEventListener('blur', phoneOut);
+
+    function phoneIn(phIn){
+        console.log('EVENT TYPE: '+phIn.target.value);
+        document.getElementById('error6').style.display = 'none';
+    }
+    function phoneOut(phOut){
+        console.log('EVENT TYPE: '+phOut.target.value);
+        if ( input6.value.length >= 7 ) {
+            document.getElementById('error6').style.display = 'none'
+        }else{
+            document.getElementById('error6').style.display = 'flex';
+            document.getElementById('error6').innerHTML = '*At least 7 digits.';
+            }
+    };
+
+
+
 
 
 
