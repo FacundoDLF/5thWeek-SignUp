@@ -38,32 +38,31 @@ window.onload = function (){
 
 
     function inputEmail(e){
-        console.log('EVENT TYPE: '+e.type);
+        console.log('EVENT TYPE: '+e.target.value);
         document.getElementById('error2').style.display = 'none';
     }
 
 
-    function validateEmail(email) {
+    function validateEmail(vemail) {
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
+        return re.test(String(vemail).toLowerCase());
+        function validateEmail(ve) {
+            const result = ('result');
+            const email = ('email').value();
+            result.text("");
+
+            if (validateE(va)) {
+            result.text(va + ' is valid :)');
+            result.css('color', 'green');
+            }   else {
+                result.text(va + ' is not valid :(');
+                result.css('color', 'red');
+                document.getElementById('error2').style.display = 'flex';
+                document.getElementById('error1').innerHTML = '*At least 6 characters.';
+                }
+        }
+
     }
-    function validateE(ve) {
-        const result = ('result');
-        const email = ('input2').value();
-        result.text("");
-
-        if (validateE(va)) {
-          result.text(va + ' is valid :)');
-          result.css('color', 'green');
-        }   else {
-            result.text(va + ' is not valid :(');
-            result.css('color', 'red');
-            document.getElementById('error2').style.display = 'flex';
-            document.getElementById('error1').innerHTML = '*At least 6 characters.';
-            }
-      }
-
-
     //input PASS
 
     var itemInput3 = document.getElementById('input3');
@@ -199,7 +198,54 @@ window.onload = function (){
     };
 
     // input CP
-    
+    var itemInput9 = document.getElementById('input9');
+
+    itemInput9.addEventListener('focus', cpIn);
+    itemInput9.addEventListener('blur', cpOut);
+
+    function cpIn(cpI) {
+        console.log(cpI);
+        document.getElementById('error9').style.display = 'none';
+    }
+
+    function cpOut(cpO) {
+        if (input9.value.length < 3) {
+            document.getElementById('error9').style.display = 'flex';
+            document.getElementById('error9').innerHTML = '*At least 3 chars.';
+        }
+    };
+
+    // input DNI
+
+    var itemInput10 = document.getElementById('input10');
+
+    itemInput10.addEventListener('focus', dniOn);
+    itemInput10.addEventListener('blur', dniOut);
+
+    function dniOn(dni) {
+        console.log(dni.target.value);
+        document.getElementById('error10').style.display = 'none';
+    }
+
+    function dniOut(dniO) {
+        console.log(dniO.target.value)
+        if (( typeof dniO !== 'number') || (input10.length < 7) || (dniO.target.value.length > 8)) {
+            document.getElementById('error10').style.display = 'flex';
+            document.getElementById('error10').innerHTML = '*In between 7 or 8 digits.';
+        }
+    };
+
+    // SUBMIT
+
+    var submitBtn = document.getElementById('submit');
+
+    submitBtn.addEventListener('click', send);
+
+    function send(snd) {
+        alert('THANKS FOR SUBSCRIBE!');
+    };
+
+
 
 
 
