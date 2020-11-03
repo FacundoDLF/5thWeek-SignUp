@@ -180,6 +180,25 @@ window.onload = function (){
 
     // input CITY
 
+    var itemInput8 = document.getElementById('input8');
+
+    itemInput8.addEventListener('focus', ctIn);
+    itemInput8.addEventListener('blur', ctOut);
+
+    function ctIn(ctI) {
+        console.log(ctI);
+        document.getElementById('error8').style.display = 'none';
+    }
+
+    function ctOut(ctO) {
+        console.log(ctO);
+        if (input8.value.length < 3) {
+            document.getElementById('error8').style.display = 'flex';
+            document.getElementById('error8').innerHTML = '*At least 3 chars.';
+        }
+    };
+
+    // input CP
     
 
 
