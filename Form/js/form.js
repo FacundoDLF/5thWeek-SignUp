@@ -16,12 +16,12 @@ window.onload = function (){
     itemInput.addEventListener('blur', validateName);
 
     function inputName(n){
-        console.log('EVENT TYPE: '+n.type);
+
         document.getElementById('error1').style.display = 'none';
     }
     function validateName(vn){
-        console.log('EVENT TYPE: '+vn.type);
-        if ( input1.value.length < 6) {
+
+         if (input1.value.length < 6){ //|| (input1.value !== input1.value.contains('')) )
             document.getElementById('error1').style.display = 'flex';
             document.getElementById('error1').innerHTML = '*At least 6 characters.';
         }   else{
@@ -43,24 +43,23 @@ window.onload = function (){
     }
 
 
-    function validateEmail(vemail) {
-        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(vemail).toLowerCase());
-        function validateEmail(ve) {
-            const result = ('result');
-            const email = ('email').value();
-            result.text("");
+    function validateEmail(ve) {
+        // const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        // return re.test(String(vemail).toLowerCase());
+        // function verify(vf) {
+        //     const result = ('result');
+        //     const email = ('email').value();
+        //     result.text("");
 
-            if (validateE(va)) {
-            result.text(va + ' is valid :)');
+            if (verify(vf)) {
+            result.text(vf + ' is valid :)');
             result.css('color', 'green');
             }   else {
-                result.text(va + ' is not valid :(');
+                result.text(vf + ' is not valid :(');
                 result.css('color', 'red');
                 document.getElementById('error2').style.display = 'flex';
                 document.getElementById('error1').innerHTML = '*At least 6 characters.';
                 }
-        }
 
     }
     //input PASS
@@ -242,7 +241,18 @@ window.onload = function (){
     submitBtn.addEventListener('click', send);
 
     function send(snd) {
-        alert('THANKS FOR SUBSCRIBE!');
+
+        var validFields = '';
+        var errorFields = '';
+
+        if (validateName()) {
+            validFields = validFields + 'Full name: ' + input1.value + '\n';
+        } else {
+           errorFields = errorFields + '* Full name has errors' + '\n';
+        }
+
+        alert(validFields + errorFields);
+        if (errorFields === '') alert('THANKS FOR SUBSCRIBE!')
     };
 
 
