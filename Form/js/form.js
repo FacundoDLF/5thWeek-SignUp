@@ -29,24 +29,29 @@ window.onload = function (){
     }
 
     //input EMAIL
-    var itemInput2 = document.querySelector('input[type="email"]');
 
-    itemInput2.addEventListener('focus', inputEmail);
-    itemInput2.addEventListener('blur', validEmail);
 
-    function inputEmail(e){
-        console.log('EVENT TYPE: '+e.type);
-        document.getElementById('error2').style.display = 'none';
+    //input PASS
+
+    var itemInput3 = document.getElementById('input3');
+
+    itemInput3.addEventListener('focus', inputPass);
+    itemInput3.addEventListener('blur', outPutPass);
+
+    function inputPass(pw){
+        console.log('EVENT TYPE: '+p.type);
+        document.getElementById('error3').style.display = 'none';
     }
-    function validEmail(ve){
-        console.log('EVENT TYPE: '+ve.type);
-        if ( itemInput2.value.type === 'email') {
-            document.getElementById('error2').style.display = 'none';
-        } else{
-            document.getElementById('error2').style.display = 'flex';
-            document.getElementById('error2').innerHTML = '*Incorrect format.';
+    function outPutPass(pw){
+        console.log('EVENT TYPE: '+pw.type);
+        if (itemInput3) {
+            document.getElementById('error3').style.display = 'none';
+        } else {
+            document.getElementById('error3').style.display = 'flex';
+            document.getElementById('error3').innerHTML = '*.';
         }
     }
+
 
 
 
