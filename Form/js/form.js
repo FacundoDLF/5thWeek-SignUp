@@ -15,53 +15,51 @@ window.onload = function (){
     itemInput.addEventListener('focus', inputName);
     itemInput.addEventListener('blur', validateName);
 
-    function inputName(n){
 
+    function inputName(n){
+        console.log('EVENT TYPE: '+n.type);
         document.getElementById('error1').style.display = 'none';
     }
     function validateName(vn){
+        console.log('EVENT TYPE: '+vn.type);
 
-         if (input1.value.length < 6){ //|| (input1.value !== input1.value.contains('')) )
+        if ( /*input1.value.length < 6*/ vn.indexOf(' ', 0) = false ) {
             document.getElementById('error1').style.display = 'flex';
-            document.getElementById('error1').innerHTML = '*At least 6 characters.';
+            document.getElementById('error1').innerHTML = '*At least 6 characters/ 1 space.';
         }   else{
             document.getElementById('error1').style.display = 'none';
             }
     }
 
+
     //input EMAIL
 
-    var itemInput2 = document.getElementById('input2');
+    var emailInput = document.getElementById('email-input');
 
-    itemInput2.addEventListener('focus', inputEmail);
-    itemInput2.addEventListener('blur', validateEmail);
-
+        emailInput.addEventListener('focus', inputEmail);
+        emailInput.addEventListener('blur', validateEmail);
 
     function inputEmail(e){
         console.log('EVENT TYPE: '+e.target.value);
-        document.getElementById('error2').style.display = 'none';
+        document.getElementById('email-input-error').style.display = 'none';
+    }
+    function validateEmail() {
+        var emailInputValue = emailInput.value; // document.getElementById('email-input').value;
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var isValidEmail = re.test(toString(emailInputValue).toLowerCase());
+        var errorEmailField = document.getElementById('email-input-error');
+
+        if (isValidEmail) {
+            errorEmailField.textContent('Email is not valid, is valid :)');
+            errorEmailField.css('color', 'green');
+            return true;
+        } else {
+            document.getElementById('email-input-error').style.display = 'flex';
+            document.getElementById('email-input-error').innerHTML ='*example@dominio.com'
+            return false;
+        }
     }
 
-
-    function validateEmail(ve) {
-        // const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        // return re.test(String(vemail).toLowerCase());
-        // function verify(vf) {
-        //     const result = ('result');
-        //     const email = ('email').value();
-        //     result.text("");
-
-            if (verify(vf)) {
-            result.text(vf + ' is valid :)');
-            result.css('color', 'green');
-            }   else {
-                result.text(vf + ' is not valid :(');
-                result.css('color', 'red');
-                document.getElementById('error2').style.display = 'flex';
-                document.getElementById('error1').innerHTML = '*At least 6 characters.';
-                }
-
-    }
     //input PASS
 
     var itemInput3 = document.getElementById('input3');
@@ -126,7 +124,8 @@ window.onload = function (){
 
     function ageOut(aOut){
         console.log('EVENT TYPE: '+aOut.target.value);
-        if ( input5.value.length <= 2 ) {
+
+        if (input5.value.length >= 2) {
             document.getElementById('error5').style.display = 'none'
         }else{
             document.getElementById('error5').style.display = 'flex';
